@@ -37,3 +37,5 @@ https://raw.githubusercontent.com/oracle/ocicli/master/scripts/install/install.s
 --prefix static --force           oci os object put -bn ${{secrets.OCI_BUCKET}} --file ./build/manifest.json --content-type application/json --force           oci os object bulk-upload -bn ${{secrets.OCI_BUCKET}} -src-dir ./build --content-type text/html --include *.html -overwrite           oci os object bulk-upload -bn ${{secrets.OCI_BUCKET}} -src-dir ./build --content-type image/jpeg --include *.jpg -overwrite           oci os object bulk-upload -bn ${{secrets.OCI_BUCKET}} -src-dir ./build --content-type text/javascript --include *.js -
 -overwrite           oci os object bulk-upload -bn ${{secrets.OCI_BUCKET}} -src-dir ./build --content-type text/css --include *.css -overwrite           oci os object bulk-upload -bn ${{secrets.OCI_BUCKET}} -src-dir ./build --content-type text/plain --exclude *.js -exclude *.html --exclude *.jpg --exclude *.css --exclude ./build/manifest.json --overwrite 
 
+
+
